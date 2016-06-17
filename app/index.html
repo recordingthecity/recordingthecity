@@ -39,7 +39,6 @@
     <![endif]-->
 <canvas></canvas>
     <div class="wrapper">
-
       <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" ng-class="{success: mailchimp.result === 'success'}">
         <div ng-hide="mailchimp.result === 'success'" class="form-container">
           <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='erictherobot'">
@@ -47,8 +46,9 @@
           <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='a3ebf276a280d2f7e5336afe1'">
           <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='d328f47b4a'">
 
-          <h1 class='animated bounceInDown'>Recording The City</h1>
-          <p class='tagline animated bounceInDown'>Join the wait list below</p>
+          <img src="images/phone.png" class='logo animated bounceInDown' />
+          <!-- <h1 class='animated bounceInDown'>Recording The City</h1>
+          <p class='tagline animated bounceInDown'>Join the wait list below</p> -->
 
           <input class="form-control" type="email" name="email" ng-model="mailchimp.email" placeholder="Enter your email address" required>
 
